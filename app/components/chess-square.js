@@ -3,8 +3,8 @@ import Ember from 'ember';
 var ChessSquare = Ember.Component.extend({
     tagName: 'td',
     attributeBindings: ['width', 'height', 'style'],
-    width: 100,
-    height: 100,
+    width: 50,
+    height: 50,
     style: function () {
         return 'background-color: ' + this.get('color') + ';';
     }.property('color'),
